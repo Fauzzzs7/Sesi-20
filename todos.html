@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos | Final Project | Fauz Syabana Putra</title>
+    <script src="js/footer-js.js"></script>
+    <script src="js/todos-js.js"></script>
+    <link rel="stylesheet" href="css/todosstyle.css">
+</head>
+<body onload="addtolist()">
+    <header id="headsec">
+        <div id="webLogo" class="logo">
+            <a href="index.html"><img src="images/fauz.png" alt="" id="logoimg"></a>
+        </div>
+        <div id="navigation" class="navbar">
+            <a href="index.html"><li id="homenav" class="navlist">HOME</li></a>
+            <a href="portofolio.html"><li id="portofolionav" class="navlist">PORTFOLIO</li></a>
+            <a href="blog.html"><li id="blognav" class="navlist">BLOG</li></a>
+            <a href="about.html"><li id="aboutnav" class="navlist">ABOUT US</li></a>
+            <a href="contact.html"><li id="contactnav" class="navlist">CONTACT</li></a>
+            <a href="todos.html"><li id="activenav" class="navlist">TODOS</li></a>
+        </div>
+    </header>
+    <section id="todossec" class="todosseccontent">
+        <h1 class="todostitle">TODOS</h1>
+        <div class="inputtodossec">
+            <div class="input-todos">
+                <input type="text" id="todos-con" placeholder="input todos..." required>
+                <button id="todos-btn" onclick="addobj()">ADD</button>
+            </div>
+            <div id="contenttodo"></div>
+        </div>
+    </section>
+    
+    <section id="photostream-pop">
+        <div class="main-photostream" onclick="popOutofStream()">
+            <div id="photostream-con" class="photostream-content">
+                <div class="photostream-title">
+                    <p>Photo Stream</p>
+                </div>
+                <div class="photostream-image">
+                    <img src="images/g2.jpg" alt="" id="psconimg">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="footertop">
+        <div class="footsec1">
+            <div class="foot-about">
+                <h2>About Us</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nisi, aliquam eaque nulla similique ab tenetur deleniti autem doloremque minima voluptatibus dignissimos iure officiis? Facilis dicta cumque autem aliquam dolorum!</p>
+                <br>
+                <button class="foot-button">Learn More</button>
+            </div>
+            <div class="foot-photo">
+                <h2>Photo Stream</h2>
+                <div class="photoclass">
+                    <img src="images/g1.jpg" alt="" onclick="photoStreamClicked(1)">
+                    <img src="images/g2.jpg" alt="" onclick="photoStreamClicked(2)">
+                    <img src="images/g3.jpg" alt="" onclick="photoStreamClicked(3)">
+                    <img src="images/g4.jpg" alt="" onclick="photoStreamClicked(4)">
+                    <img src="images/g5.jpg" alt="" onclick="photoStreamClicked(5)">
+                    <img src="images/g6.jpg" alt="" onclick="photoStreamClicked(6)">
+                </div>
+            </div>
+        </div>
+        <div class="footsec2">
+            <div class="foot-tweet">
+                <h2>Latest Tweet</h2>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+            </div>
+            <div class="foot-social">
+                <h2>Social Connecting</h2>
+                <div class="socialmedia">
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/f1.png" alt="">
+                        <img class="colorlogo" src="images/f2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/go1.png" alt="">
+                        <img class="colorlogo" src="images/go2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/tw1.png" alt="">
+                        <img class="colorlogo" src="images/tw2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/in1.png" alt="">
+                        <img class="colorlogo" src="images/in2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/y1.png" alt="">
+                        <img class="colorlogo" src="images/y2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/b1.png" alt="">
+                        <img class="colorlogo" src="images/b2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/cc1.png" alt="">
+                        <img class="colorlogo" src="images/cc2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/o1.png" alt="">
+                        <img class="colorlogo" src="images/o2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footsec3">
+            <div class="foot-contact">
+                <h2>Contact Info</h2>
+                <div class="tweet1">
+                    <img class="conlogo" src="images/address.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Nulla, illum!</p>
+                </div>
+                <div class="tweet1">
+                    <img class="conlogo" src="images/phone.png" alt="">
+                    <p>Phone: +6283893484758<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+6283893484758</p>
+                </div>
+                <div class="tweet1">
+                    <img class="conlogo" src="images/msg.png" alt="">
+                    <p><a href="#">fauzsyabana68@gmail(dot)com</a></p>
+                </div>
+            </div>
+            <div class="foot-follow">
+                <h2>Follow Us</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, placeat? Perferendis vel maiores quo aperiam aut eum voluptatum ipsam quasi.</p>
+                <div class="inputemail">
+                    <input class="input-follow" type="text">
+                    <img src="images/email.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerbottom">
+        <div class="copy">
+            <span>&copy; 2021 <a href="#">HACKTIV8 FAUZ SYABANA PUTRA</a></span>
+        </div>
+        <div class="nav-footer">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="portofolio.html">PORTOFOLIO</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </div>
+    </div>
+</footer>
+</html>

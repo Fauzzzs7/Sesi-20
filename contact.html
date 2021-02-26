@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact-style.css">
+    <script src="js/insertcontact.js"></script>
+    <script src="js/footer-js.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <title>Contact Us | Final Project | Fauz Syabana Putra</title>
+</head>
+<body>
+    <header id="headsec">
+        <div id="webLogo" class="logo">
+            <a href="index.html"><img src="images/fauz.png" alt="" id="logoimg"></a>
+        </div>
+        <div id="navigation" class="navbar">
+            <a href="index.html"><li id="homenav" class="navlist">HOME</li></a>
+            <a href="portofolio.html"><li id="portofolionav" class="navlist">PORTFOLIO</li></a>
+            <a href="blog.html"><li id="blognav" class="navlist">BLOG</li></a>
+            <a href="about.html"><li id="aboutnav" class="navlist">ABOUT US</li></a>
+            <a href="contact.html"><li id="activenav" class="navlist">CONTACT</li></a>
+            <a href="todos.html"><li id="todosnav" class="navlist">TODOS</li></a>
+        </div>
+    </header>
+    <section id="contact-title" class="contact-title-con">
+        <h1><span>Contact Us</span></h1>
+    </section>
+    <section id="contact-map" class="contact-map-con">
+        <iframe class="mapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.022861907926!2d106.77942751476932!3d-6.26071869546838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1a8713ce207%3A0x2c3ea1f4a28bfac5!2sHacktiv8%20Indonesia!5e0!3m2!1sen!2sid!4v1613493342566!5m2!1sen!2sid"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+    <section id="contact-us-main" class="contact-us-content">
+        <div class="messagecon">
+            <h1>SEND US A MESSAGE</h1>
+            <div class="messageformtop">
+                <input type="text" class="inputtop" placeholder="Name..." id="send-contact-name">
+                <input type="text" class="inputtop" placeholder="Email..." id="send-contact-email">
+                <input type="text" class="inputtop" placeholder="Subject..." id="send-contact-subject">
+            </div>
+            <textarea id="send-contact-text" class="inputtextarea" name="emailcontent" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
+            <button class="messagebutton" onclick="sendContact()">Send a Message</button>
+        </div>
+        <div class="listcontact">
+            <div class="foot-contact">
+                <h2 class="listcontitle">CONTACT US</h2>
+                <div class="tweet1">
+                    <img class="conlogo" src="images/address.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Nulla, illum!</p>
+                </div>
+                <div class="tweet1">
+                    <img class="conlogo" src="images/phone.png" alt="">
+                    <p>Phone: +6283893484758<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+6283893484758</p>
+                </div>
+                <div class="tweet1">
+                    <img class="conlogo" src="images/msg.png" alt="">
+                    <p class="linklistcontact"><a href="#">fauzsyabana68(dot)com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="photostream-pop">
+        <div class="main-photostream" onclick="popOutofStream()">
+            <div id="photostream-con" class="photostream-content">
+                <div class="photostream-title">
+                    <p>Photo Stream</p>
+                </div>
+                <div class="photostream-image">
+                    <img src="images/g2.jpg" alt="" id="psconimg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactpop" onclick="popOutofContact()">
+        <div class="main-contactpop">
+            <div id="contactpop-content">
+                <h2>Your Email Has Been Drafted</h2>
+                <div class="contactpopsection">
+                    <div id="contact-pop-name"><p style="margin-right: 10px;">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p></div>
+                    <div id="contact-pop-date"><p style="margin-right: 10px;">DATE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </p></div>
+                    <div id="contact-pop-email"><p style="margin-right: 10px;">EMAIL&nbsp;&nbsp;&nbsp;&nbsp;: </p></div>
+                    <div id="contact-pop-subject"><p style="margin-right: 10px;">SUBJECT&nbsp;&nbsp;: </p></div>
+                    <div id="contact-pop-text"><p style="margin-right: 10px;">CONTENT&nbsp;&nbsp;: </p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="footertop">
+        <div class="footsec1">
+            <div class="foot-about">
+                <h2>About Us</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nisi, aliquam eaque nulla similique ab tenetur deleniti autem doloremque minima voluptatibus dignissimos iure officiis? Facilis dicta cumque autem aliquam dolorum!</p>
+                <br>
+                <button class="foot-button">Learn More</button>
+            </div>
+            <div class="foot-photo">
+                <h2>Photo Stream</h2>
+                <div class="photoclass">
+                    <img src="images/g1.jpg" alt="" onclick="photoStreamClicked(1)">
+                    <img src="images/g2.jpg" alt="" onclick="photoStreamClicked(2)">
+                    <img src="images/g3.jpg" alt="" onclick="photoStreamClicked(3)">
+                    <img src="images/g4.jpg" alt="" onclick="photoStreamClicked(4)">
+                    <img src="images/g5.jpg" alt="" onclick="photoStreamClicked(5)">
+                    <img src="images/g6.jpg" alt="" onclick="photoStreamClicked(6)">
+                </div>
+            </div>
+        </div>
+        <div class="footsec2">
+            <div class="foot-tweet">
+                <h2>Latest Tweet</h2>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+            </div>
+            <div class="foot-social">
+                <h2>Social Connecting</h2>
+                <div class="socialmedia">
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/f1.png" alt="">
+                        <img class="colorlogo" src="images/f2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/go1.png" alt="">
+                        <img class="colorlogo" src="images/go2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/tw1.png" alt="">
+                        <img class="colorlogo" src="images/tw2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/in1.png" alt="">
+                        <img class="colorlogo" src="images/in2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/y1.png" alt="">
+                        <img class="colorlogo" src="images/y2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/b1.png" alt="">
+                        <img class="colorlogo" src="images/b2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/cc1.png" alt="">
+                        <img class="colorlogo" src="images/cc2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/o1.png" alt="">
+                        <img class="colorlogo" src="images/o2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footsec3">
+            <div class="foot-contact">
+                <h2>Contact Info</h2>
+                <div class="tweet1">
+                    <img class="conlogo" src="images/address.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Nulla, illum!</p>
+                </div>
+                <div class="tweet1">
+                    <img class="conlogo" src="images/phone.png" alt="">
+                    <p>Phone: +6283893484758<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+6283893484758</p>
+                </div>
+                <div class="tweet1">
+                    <img class="conlogo" src="images/msg.png" alt="">
+                    <p><a href="#">fauzsyabana68@gmail(dot)com</a></p>
+                </div>
+            </div>
+            <div class="foot-follow">
+                <h2>Follow Us</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, placeat? Perferendis vel maiores quo aperiam aut eum voluptatum ipsam quasi.</p>
+                <div class="inputemail">
+                    <input class="input-follow" type="text">
+                    <img src="images/email.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerbottom">
+        <div class="copy">
+            <span>&copy; 2021 <a href="#">HACKTIV8 FAUZ SYABANA PUTRA</a></span>
+        </div>
+        <div class="nav-footer">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="portofolio.html">PORTOFOLIO</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </div>
+    </div>
+</footer>
+</html>

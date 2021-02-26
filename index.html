@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final Project | Fauz Syabana Putra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script src="js/assignment.js" type="text/javascript"></script>
+<script src="js/slide.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/footer-js.js"></script>
+<link href="css/style2.css" rel="stylesheet" type="text/css">
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+		</script>
+</head>
+</head>
+<body>
+<header id="headsec">
+    <div id="webLogo" class="logo">
+        <a href="index.html"><img src="images/fauz.png" alt="" id="logoimg"></a>
+    </div>
+    <div id="navigation" class="navbar">
+        <a href="index.html"><li id="activenav" class="navlist">HOME</li></a>
+        <a href="portofolio.html"><li id="portofolionav" class="navlist">PORTFOLIO</li></a>
+        <a href="blog.html"><li id="blognav" class="navlist">BLOG</li></a>
+        <a href="about.html"><li id="aboutnav" class="navlist">ABOUT US</li></a>
+        <a href="contact.html"><li id="contactnav" class="navlist">CONTACT</li></a>
+        <a href="todos.html"><li id="todosnav" class="navlist">TODOS</li></a>
+    </div>
+</header>
+<section id="slide" class="slidesec">
+    <div class="slideTop">
+        <div class="leftbut">
+            <img src="images/l-arrow.png" alt="" onclick="changeConB()">
+        </div>
+        <div class="content" id="con1">
+            <div class="contimg">
+                <img src="images/banner-left.png" alt="">
+            </div>
+            <div class="conttext">
+                <h1 class="maintext"><span>WE BELIEVE</span></h1>
+                <h1 class="maintext"><span>IN QUALITY DESIGN</span></h1>
+                <br>
+                <h2 class="secondtext"><span>Any Creative Project is Unique</span></h2>
+                <h2 class="secondtext"><span>and should be provided with</span></h2>
+                <h2 class="secondtext"><span>the appropriate quality</span></h2>
+                <br>
+                <button class="conbutton" onclick="popTable()">Order Now</button>
+            </div>
+        </div>
+        <div class="content" id="con2">
+            <div class="contimg">
+                <img src="images/banner-left.png" alt="">
+            </div>
+            <div class="conttext">
+                <h1 class="maintext"><span>WE BELIEVE</span></h1>
+                <h1 class="maintext"><span>IN QUALITY DESIGN</span></h1>
+                <br>
+                <h2 class="secondtext"><span>Any Creative Project is Unique</span></h2>
+                <h2 class="secondtext"><span>and should be provided with</span></h2>
+                <h2 class="secondtext"><span>the appropriate quality</span></h2>
+                <br>
+                <button class="conbutton" onclick="popTable()">Order Now</button>
+            </div>
+        </div>
+        <div class="content" id="con3">
+            <div class="contimg">
+                <img src="images/banner-left.png" alt="">
+            </div>
+            <div class="conttext">
+                <h1 class="maintext"><span>WE BELIEVE</span></h1>
+                <h1 class="maintext"><span>IN QUALITY DESIGN</span></h1>
+                <br>
+                <h2 class="secondtext"><span>Any Creative Project is Unique</span></h2>
+                <h2 class="secondtext"><span>and should be provided with</span></h2>
+                <h2 class="secondtext"><span>the appropriate quality</span></h2>
+                <br>
+                <button class="conbutton" onclick="popTable()">Order Now</button>
+            </div>
+        </div>
+        <div class="content" id="con4">
+            <div class="contimg">
+                <img src="images/banner-left.png" alt="">
+            </div>
+            <div class="conttext">
+                <h1 class="maintext"><span>WE BELIEVE</span></h1>
+                <h1 class="maintext"><span>IN QUALITY DESIGN</span></h1>
+                <br>
+                <h2 class="secondtext"><span>Any Creative Project is Unique</span></h2>
+                <h2 class="secondtext"><span>and should be provided with</span></h2>
+                <h2 class="secondtext"><span>the appropriate quality</span></h2>
+                <br>
+                <button class="conbutton" onclick="popTable()">Order Now</button>
+            </div>
+        </div>
+        <div class="content" id="con5">
+            <div class="contimg">
+                <img src="images/banner-left.png" alt="">
+            </div>
+            <div class="conttext">
+                <h1 class="maintext"><span>WE BELIEVE</span></h1>
+                <h1 class="maintext"><span>IN QUALITY DESIGN</span></h1>
+                <br>
+                <h2 class="secondtext"><span>Any Creative Project is Unique</span></h2>
+                <h2 class="secondtext"><span>and should be provided with</span></h2>
+                <h2 class="secondtext"><span>the appropriate quality</span></h2>
+                <br>
+                <button class="conbutton" onclick="popTable()">Order Now</button>
+            </div>
+        </div>
+        <div class="rightbut">
+            <img src="images/r-arrow.png" alt=""  onclick="changeConN()">
+        </div>
+    </div>
+    <div class="slideBottom">
+        <div class="buttons" id="but1" onclick="buttonClicked(1)"></div>
+        <div class="buttons" id="but2" onclick="buttonClicked(2)"></div>
+        <div class="buttons" id="but3" onclick="buttonClicked(3)"></div>
+        <div class="buttons" id="but4" onclick="buttonClicked(4)"></div>
+        <div class="buttons" id="but5" onclick="buttonClicked(5)"></div>
+    </div>
+</section>
+<section id="about" class="aboutsec">
+    <div class="abouttop">
+        <h1>WE CREATE QUALITY DESIGN</h1>
+        <h2>We specialize in Web Design / Development and Graphic Design</h2>
+    </div>
+    <div class="aboutbottom">
+        <div class="aboutcon" id="aboutcon1">
+            <div class="imgabout">
+                <img src="images/pic.jpg" alt="">
+            </div>
+            <div class="imgdesc">
+                <h2>REDESIGNING<br>WITH PERSONALITY</h2>
+                <p class="descdetail">in <a href="#">Web Design</a></p>
+            </div>
+        </div>
+        <div class="aboutcon" id="aboutcon2">
+            <div class="imgabout">
+                <img class="icon" src="images/icon1.png" alt="">
+                <br>
+                <br>
+                <h1>WEB DEVELOPMENT</h1>
+            </div>
+            <div class="imgdesc">
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore expedita dolorem pariatur eaque!</p>
+            </div>
+        </div>
+        <div class="aboutcon" id="aboutcon3">
+            <div class="imgabout">
+                <img class="icon" src="images/icon2.png" alt="">
+                <br>
+                <br>
+                <h1>WEB DESIGN</h1>
+            </div>
+            <div class="imgdesc">
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore expedita dolorem pariatur eaque!</p>
+            </div>
+        </div>
+        <div class="aboutcon" id="aboutcon4">
+            <div class="imgabout">
+                <img class="icon" src="images/icon3.png" alt="">
+                <br>
+                <br>
+                <h1>GRAPHIC DESIGN DESIGN</h1>
+            </div>
+            <div class="imgdesc">
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore expedita dolorem pariatur eaque!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="content-middle">
+		<h2><span>Our work</span></h2>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+      <div id="container">
+        <div id="main1">
+       <ul id="tiles">
+        <!-- These are our grid blocks -->
+        <li>
+          <a href="images/photo-1570126688035-1e6adbd61053.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo-1570126688035-1e6adbd61053.jpg" width="200" height="283">
+          </a>
+        </li>
+        <li>
+          <a href="images/photo2.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo2.jpg" width="200" height="300">
+          </a>
+       </li>
+        <li>
+          <a href="images/photo3.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo3.jpg" width="200" height="252">
+          </a>
+       </li>
+        <li>
+          <a href="images/photo5.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo5.jpg" width="200" height="158">
+          </a>
+        </li>
+        <li>
+          <a href="images/photo4.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo4.jpg" width="200" height="265">
+          </a>
+       </li>
+        <li>
+          <a href="images/photo6.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo6.jpg" width="200" height="158">
+          </a>
+        </li>
+        <li>
+          <a href="images/photo8.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo8.jpg" width="200" height="200">
+          </a>
+        </li>
+        <li>
+          <a href="images/pic8.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/pic8.jpg" width="200" height="200">
+          </a>
+        </li>
+        <li>
+          <a href="images/photo9.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo9.jpg" width="200" height="133">
+          </a>
+        </li>
+        <li>
+          <a href="images/photo12.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo12.jpg" width="200" height="193">
+          </a>
+        </li>
+        <li>
+          <a href="images/photo7.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo7.jpg" width="200" height="283">
+          </a>
+       </li>
+        <li>
+          <a href="images/photo10.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo10.jpg" width="200" height="283">
+          </a>
+        </li>
+        <li>
+          <a href="images/photo13.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo13.jpg" width="200" height="300">
+          </a>
+       </li>
+        <li>
+          <a href="images/pic3.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/pic3.jpg" width="200" height="252">
+          </a>
+       </li>
+        <li>
+          <a href="images/photo11.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo11.jpg" width="200" height="158">
+          </a>
+        </li>
+        <li>
+          <a href="images/photo14.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo14.jpg" width="200" height="265">
+          </a>
+       </li>
+        <li>
+          <a href="images/pic6.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/pic6.jpg" width="200" height="158">
+          </a>
+        </li>
+        <li>
+          <a href="images/pic7.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/pic7.jpg" width="200" height="200">
+          </a>
+        </li>
+        <li>
+          <a href="images/pic8.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/pic8.jpg" width="200" height="200">
+          </a>
+        </li>
+        <li>
+          <a href="images/photo15.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo15.jpg" width="200" height="133">
+          </a>
+        </li>
+        <li>
+          <a href="images/photo10.jpg" rel="lightbox" class="cboxElement">
+            <img src="images/photo10.jpg" width="200" height="193">
+          </a>
+        </li>
+     </ul>
+   </div> 
+  </div>
+   <link rel="stylesheet" href="css/colorbox.css">
+  <!-- Include the imagesLoaded plug-in -->
+  <script src="js/imagesloaded.js"></script>
+  <!-- include colorbox -->
+  <script src="js/jquery.colorbox-min.js"></script>
+  <!-- Include the plug-in -->
+  <script src="js/jquery.wookmark.js"></script>
+  <!-- Once the page is loaded, initalize the plug-in. -->
+  <script type="text/javascript">
+    (function ($){
+      $('#tiles').imagesLoaded(function() {
+        // Prepare layout options.
+        var options = {
+          autoResize: true, // This will auto-update the layout when the browser window is resized.
+          container: $('#main1'), // Optional, used for some extra CSS styling
+          offset: 2, // Optional, the distance between grid items
+          itemWidth:200 // Optional, the width of a grid item
+        };
+
+        // Get a reference to your grid items.
+        var handler = $('#tiles li');
+
+        // Call the layout function.
+        handler.wookmark(options);
+
+        // Init lightbox
+        $('a', handler).colorbox({
+          rel: 'lightbox'
+        });
+      });
+    })(jQuery);
+  </script>
+</div>
+</section>
+<section id="client" class="clientsec">
+    <div class="gallerytop">
+        <div class="title">
+            <div class="line"></div>
+            <div class="realtitle">
+                <span>OUR CLIENTS</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos alias placeat modi, iste iure sed!</p>
+    </div>
+    <div class="clientbottom">
+        <img class="arrows-left" src="images/l-arrow.png" alt="" onclick="prevBtn()">
+        <div class="carousel">
+            <div id="carouselslide">
+                <img src="images/client1.jpg" alt="" class="icons">
+                <img src="images/client2.jpg" alt="" class="icons">
+                <img src="images/client3.jpg" alt="" class="icons">
+                <img src="images/client4.jpg" alt="" class="icons">
+                <img src="images/client5.jpg" alt="" class="icons">
+                <img src="images/client6.jpg" alt="" class="icons">
+                <img src="images/client7.jpg" alt="" class="icons">
+                <img src="images/client8.jpg" alt="" class="icons">
+                <!-- Clones -->
+                <img src="images/client1.jpg" alt="" class="icons">
+                <img src="images/client2.jpg" alt="" class="icons">
+                <img src="images/client3.jpg" alt="" class="icons">
+                <img src="images/client4.jpg" alt="" class="icons">
+                <img src="images/client5.jpg" alt="" class="icons">
+                <img src="images/client6.jpg" alt="" class="icons">
+                <img src="images/client7.jpg" alt="" class="icons">
+                <img src="images/client8.jpg" alt="" class="icons">
+            </div>
+        </div>
+        <img class="arrows-right" src="images/r-arrow.png" alt="" onclick="nextBtn()">
+    </div>
+</section>
+<section id="order-pop">
+    <div class="mainPop">
+        <div id="pop-content" class="popCon">
+            <table class="tablesec">
+                <tr class="headrow">
+                    <th><p>PLAN FEATURES</p></th>
+                    <th><p>BASIC<br>$5/Month</p></th>
+                    <th><p>ECONOMY<br>$9/Month</p></th>
+                </tr>
+                <tr>
+                    <td><p class="table-text-main">Web Space</p></td>
+                    <td><p class="table-text unlimited">Unlimited</p></td>
+                    <td><p class="table-text unlimited">Unlimited</p></td>
+                </tr>
+                <tr>
+                    <td><p class="table-text-main">Bandwith</p></td>
+                    <td><p class="table-text unlimited">Unlimited</p></td>
+                    <td><p class="table-text unlimited">Unlimited</p></td>
+                </tr>
+                <tr>
+                    <td><p class="table-text-main">25 GB Storage</p></td>
+                    <td><p class="table-text">&#10007</p></td>
+                    <td><p class="table-text unlimited">Unlimited</p></td>
+                </tr>
+                <tr>
+                    <td><p class="table-text-main">iPhone App</p></td>
+                    <td><p class="table-text">&#10007</p></td>
+                    <td><p class="table-text unlimited">Unlimited</p></td>
+                </tr>
+                <tr>
+                    <td><p class="table-text-main">Enhanced Security</p></td>
+                    <td><p class="table-text">&#10003</p></td>
+                    <td><p class="table-text">&#10003</p></td>
+                </tr>
+                <tr>
+                    <td><p class="table-text-main">E-mail</p></td>
+                    <td><p class="table-text">&#10003</p></td>
+                    <td><p class="table-text">&#10003</p></td>
+                </tr>
+                <tr>
+                    <td><p class="table-text-main">Wordpress Support</p></td>
+                    <td><p class="table-text">&#10007</p></td>
+                    <td><p class="table-text">&#10003</p></td>
+                </tr>
+                <tr>
+                    <td><p class="table-text-main">24/7 Support</p></td>
+                    <td><p class="table-text">&#10003</p></td>
+                    <td><p class="table-text">&#10003</p></td>
+                </tr>
+                <tr>
+                    <td><p class="table-text-main">Backups</p></td>
+                    <td><p class="table-text">&#10003</p></td>
+                    <td><p class="table-text">&#10003</p></td>
+                </tr>
+                <tr>
+                    <td><p class="table-text-main">Dedicated IP</p></td>
+                    <td><p class="table-text">$2/Month</p></td>
+                    <td><p class="table-text">$2/Month</p></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button>Order Now</button></td>
+                    <td><button>Order Now</button></td>
+                </tr>
+            </table>
+            <img class="removeicon" src="images/icon-remove.png" onclick="popOutOf()">
+        </div>
+    </div>
+</section>
+<section id="gallery-pop">
+    <div class="main-gallery">
+        <div id="gallery-con" class="gallery-content">
+            <img src="images/icon-remove.png" alt="" class="removegalleryicon" onclick="popOutImg()">
+            <div class="gallery-image">
+                <img id="image-content" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="numbersec">
+                <div style="display: flex; flex-direction: row;">
+                    <p id="currentnum">1</p>
+                    <p>&nbsp; of &nbsp; 21</p>
+                </div>
+                <div class="numbersec-arrows">
+                    <img class="galleryarrows" src="images/left-a.png" alt="" onclick="previous_images()">
+                    <img class="galleryarrows" src="images/right-a.png" alt="" onclick="next_images()">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="photostream-pop">
+    <div class="main-photostream" onclick="popOutofStream()">
+        <div id="photostream-con" class="photostream-content">
+            <div class="photostream-title">
+                <p>Photo Stream</p>
+            </div>
+            <div class="photostream-image">
+                <img src="images/g2.jpg" alt="" id="psconimg">
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<footer>
+    <div class="footertop">
+        <div class="footsec1">
+            <div class="foot-about">
+                <h2>About Us</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nisi, aliquam eaque nulla similique ab tenetur deleniti autem doloremque minima voluptatibus dignissimos iure officiis? Facilis dicta cumque autem aliquam dolorum!</p>
+                <br>
+                <button class="foot-button">Learn More</button>
+            </div>
+            <div class="foot-photo">
+                <h2>Photo Stream</h2>
+                <div class="photoclass">
+                    <img src="images/g1.jpg" alt="" onclick="photoStreamClicked(1)">
+                    <img src="images/g2.jpg" alt="" onclick="photoStreamClicked(2)">
+                    <img src="images/g3.jpg" alt="" onclick="photoStreamClicked(3)">
+                    <img src="images/g4.jpg" alt="" onclick="photoStreamClicked(4)">
+                    <img src="images/g5.jpg" alt="" onclick="photoStreamClicked(5)">
+                    <img src="images/g6.jpg" alt="" onclick="photoStreamClicked(6)">
+                </div>
+            </div>
+        </div>
+        <div class="footsec2">
+            <div class="foot-tweet">
+                <h2>Latest Tweet</h2>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+                <div class="tweet1">
+                    <img src="images/tw.png" alt="">
+                    <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Molestiae rem quos dolores suscipit! Ex <a href="">excepturi</a> saepe deleniti non maxime voluptatibus.</p>
+                </div>
+            </div>
+            <div class="foot-social">
+                <h2>Social Connecting</h2>
+                <div class="socialmedia">
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/f1.png" alt="">
+                        <img class="colorlogo" src="images/f2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/go1.png" alt="">
+                        <img class="colorlogo" src="images/go2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/tw1.png" alt="">
+                        <img class="colorlogo" src="images/tw2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/in1.png" alt="">
+                        <img class="colorlogo" src="images/in2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/y1.png" alt="">
+                        <img class="colorlogo" src="images/y2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/b1.png" alt="">
+                        <img class="colorlogo" src="images/b2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/cc1.png" alt="">
+                        <img class="colorlogo" src="images/cc2.png" alt="">
+                    </div>
+                    <div class="sociallogo">
+                        <img class="baselogo" src="images/o1.png" alt="">
+                        <img class="colorlogo" src="images/o2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footsec3">
+            <div class="foot-contact">
+                <h2>Contact Info</h2>
+                <div class="tweet1">
+                    <img class="conlogo" src="images/address.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Nulla, illum!</p>
+                </div>
+                <div class="tweet1">
+                    <img class="conlogo" src="images/phone.png" alt="">
+                    <p>Phone: +6283893484758<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+6283893484758</p>
+                </div>
+                <div class="tweet1">
+                    <img class="conlogo" src="images/msg.png" alt="">
+                    <p><a href="#">fauzsyabana68@gmail(dot)com</a></p>
+                </div>
+            </div>
+            <div class="foot-follow">
+                <h2>Follow Us</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, placeat? Perferendis vel maiores quo aperiam aut eum voluptatum ipsam quasi.</p>
+                <div class="inputemail">
+                    <input class="input-follow" type="text">
+                    <img src="images/email.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerbottom">
+        <div class="copy">
+            <span>&copy; 2021 <a href="#">HACKTIV8 FAUZ SYABANA PUTRA</a></span>
+        </div>
+        <div class="nav-footer">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="portofolio.html">PORTOFOLIO</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </div>
+    </div>
+</footer>
+</html>
